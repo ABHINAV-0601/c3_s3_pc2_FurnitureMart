@@ -7,4 +7,6 @@ public class FurnitureItem {
     private String furnitureUsage;
     private double price;
 
+    final static int DISCOUNT = 5;
+
 }
