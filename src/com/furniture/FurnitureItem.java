@@ -45,4 +45,11 @@ public class FurnitureItem {
     public double getPrice() {
         return price;
     }
+
+    public float calculateDiscount(){
+        if(gradeOfFurniture.equalsIgnoreCase("grade1") && furnitureUsage.equalsIgnoreCase("outdoor")){
+            return (float)(price - (price * DISCOUNT/100));
+        }
+        return (float)price;
+    }
 }
